@@ -1,0 +1,184 @@
+.select{
+	background: #5858FA;
+}
+body{
+	background: #FBEFFB;
+	font-size: 16px;
+	font-family: Arial;
+}
+/* estilos del header*/
+header{
+	background: #343b54;
+	color:white;
+	padding: 0.5em;
+	overflow: hidden;
+	position: relative;
+}
+header h1{
+	font-size: 1.9em;
+	font-weight: normal;
+	text-align: center;
+	margin:1.2em 100px 0 0;
+	font-family: 'Source Serif Pro', serif, Arial;
+}
+header #logo img{
+	width: 106px;
+	padding-right: 0.5em;
+	margin-right: 0.5em;
+	margin-top: -1.7em;
+	margin-left: -1.5em;
+}
+header #fis{
+	position: absolute;
+	right: 0;
+	top:0;
+	margin:0.5em 1em 0 0;
+}
+header #fis img{
+	width: 95px;
+	border-radius: 20%;
+
+}
+header figure{
+	float: left;
+}
+/* estilos del menu*/
+nav{
+	width: 100%;
+	background: #F781F3;
+	font-size: 1.1em;
+
+}
+#boton_menu{
+	display: none;
+}
+nav label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid #fff;
+
+}
+nav label:hover{
+	 cursor: pointer;
+	 background: rgba(0,0,0,0.3);
+}
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.menu li a{
+	display: block;
+	padding: 1em  1.2em;
+	color: #fff;
+	text-decoration: none;
+}
+.menu li:hover{
+	background: rgba(0,0,0,0.3);
+}
+/*para moviles*/
+@media (max-width:768px){
+	nav{
+		font-size: 1em;
+	}
+	nav label{
+		display: block;
+
+	}
+	.menu{
+		position: absolute;
+		background: #f781f3;
+		width: 70%;
+		margin-left: -70%;
+		transition: all 0.4s;
+
+	}
+	.menu ul{
+		flex-direction: column;
+	}
+	.menu li{
+		border-top: 1px solid #fff;
+	}
+	#boton_menu:checked ~.menu{
+		margin: 0;
+	}
+	header h1{
+		font-size: 1em;
+		margin:0.8em 90px 0 0;
+	}
+	header #fis img{
+	width: 40px;
+
+	}
+	header #logo img{
+		width: 50px;
+	}
+
+}
+
+/*..... estilos del footer.....*/
+footer{
+	width: 100%;
+	font-family: Arial;
+	background: #272727;
+	color: #fff;
+}
+footer .contenedor .footer-columna #location img, #phone img, #mail img{
+	width: 30px;
+}
+footer .footer-columna #facebook img, #twitter img{
+	width: 40px;
+	padding-left: 1em;
+}
+.footer-main{
+	max-width: 800px;
+	margin: auto;
+	padding: 50px  0;
+	display: flex;
+}
+.footer-main .footer-columna{
+	width: calc(100%/3);
+
+}
+.footer-main .footer-columna h3{
+	font-size: 1.2em;
+	color: #00c6ee;
+	margin-bottom: 20px;
+}
+.footer-main .footer-columna span p{
+	display: inline-block;
+	margin-left: 0.5em;
+	margin-bottom: 1em;
+	font-family: Arial;
+}
+.copy p{
+		text-align: center;
+		margin-bottom: 0;
+}
+/* para dispositivos moviles */
+
+@media (max-width:768px){
+	.footer-main{
+		padding: 0 0.5em;
+	}
+	.footer-main .footer-columna h3{
+		font-size: 1.2em;
+	}
+	.footer-main .footer-columna p{
+		font-size: 0.8em;
+	}
+	footer .contenedor .footer-columna #location img, #phone img, #mail img{
+	width: 18px;
+	}
+	footer .footer-columna #facebook img, #twitter img{
+		width: 30px;
+	}
+	.footer-main .footer-columna{
+		margin-top: 0.8em;
+	}
+}
